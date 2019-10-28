@@ -1,0 +1,14 @@
+mag1=[1.5,1.05,0.85,0.95,0.72,3.65,0.90,1.20]
+mag2=[1.40,1.30,0.75,0.83,0.80,3.50,1.15,1.15]
+
+cpt1=0     #nb de prix plus bas chez 1
+cpt2=0     #nb de prix plus bas chez 2
+
+for i in range (8):
+    if mag1[i]>mag2[i]:
+        cpt2=cpt2+1
+
+    else:
+
+        if cpt1==cpt2: 
+         print("Le magasin 1 est - chére")
